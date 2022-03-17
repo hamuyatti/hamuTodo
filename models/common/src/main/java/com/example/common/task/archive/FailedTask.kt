@@ -4,6 +4,6 @@ import com.example.common.task.Task
 
 data class FailedTask(
     override val id: Long,
-    override val name: String
-): Task {
-}
+    override val name: String,
+    override val unixDueDate: Long
+): Task
