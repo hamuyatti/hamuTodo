@@ -10,7 +10,10 @@ data class PostponeAbleUnDoneTask(
     val postPoneCount: Int = 0
 ) : UnDoneTask {
     override fun doneTask(): DoneTask {
-        TODO("Not yet implemented")
+        return DoneTask(
+            id = id,
+            name = name,
+        )
     }
 
     fun postPone(): UnDoneTask {

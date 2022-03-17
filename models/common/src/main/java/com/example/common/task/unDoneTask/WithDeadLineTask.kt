@@ -8,7 +8,9 @@ data class WithDeadLineTask(
     override val dueDate: Long
 ) : UnDoneTask {
     override fun doneTask(): DoneTask {
-        TODO("Not yet implemented")
+        return DoneTask(
+            id = id,
+            name = name,
+        )
     }
-
 }
