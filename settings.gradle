@@ -14,12 +14,12 @@ dependencyResolutionManagement {
 }
 rootProject.name = "hamuTodo"
 include ':app'
-include ':ui'
 include ':ui:view'
 include ':ui:viewModel'
-include ':data'
 include ':data:api'
 include ':data:repository'
 include ':data:db'
-include ':model'
-include ':model:repository'
+include ':models:common'
+include ':models:repository'
+
+
