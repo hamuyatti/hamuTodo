@@ -9,11 +9,12 @@ data class PostponeAbleUnDoneTask(
     override val unixDueDate: Long,
     val postPoneCount: Int = 0
 ) : UnDoneTask {
-    override fun doneTask(): DoneTask {
+    override fun doneTask(unixDoneDate : Long): DoneTask {
         return DoneTask(
             id = id,
             name = name,
-            unixDueDate = unixDueDate
+            unixDueDate = unixDueDate,
+            unixDoneDate = unixDoneDate
         )
     }
 

@@ -7,11 +7,12 @@ data class WithDeadLineTask(
     override val name: String,
     override val unixDueDate: Long,
     ) : UnDoneTask {
-    override fun doneTask(): DoneTask {
+    override fun doneTask(unixDoneDate : Long): DoneTask {
         return DoneTask(
             id = id,
             name = name,
-            unixDueDate = unixDueDate
+            unixDueDate = unixDueDate,
+            unixDoneDate = unixDoneDate
         )
     }
 }
