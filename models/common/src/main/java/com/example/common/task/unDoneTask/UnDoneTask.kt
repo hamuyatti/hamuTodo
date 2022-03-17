@@ -4,6 +4,10 @@ import com.example.common.task.Task
 import com.example.common.task.archive.DoneTask
 
 interface UnDoneTask : Task {
-    val dueDate : Long
-    fun doneTask() : DoneTask
+    val dueDate: Long
+    fun doneTask(): DoneTask
+
+    companion object {
+        const val POSTPONE_ABLE_COUNT = 3
+    }
 }
