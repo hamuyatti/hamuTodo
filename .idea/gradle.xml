@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/data/repository" />
             <option value="$PROJECT_DIR$/model" />
             <option value="$PROJECT_DIR$/ui" />
+            <option value="$PROJECT_DIR$/ui/view" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
