@@ -14,4 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "hamuTodo"
 include ':app'
-include ':api'
+include ':data:api'
+include ':data:repository'
