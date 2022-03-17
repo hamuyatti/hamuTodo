@@ -1,15 +1,11 @@
 package com.example.common.task
 
-class PostponeAbleUnDoneTask : UnDoneTask {
-    override val dueDate: Long
-        get() = TODO("Not yet implemented")
-
+data class PostponeAbleUnDoneTask(
+    override val dueDate: Long,
+    override val id: Long,
+    override val name: String
+) : UnDoneTask {
     override fun doneTask() {
         TODO("Not yet implemented")
     }
-
-    override val id: Long
-        get() = TODO("Not yet implemented")
-    override val name: String
-        get() = TODO("Not yet implemented")
 }

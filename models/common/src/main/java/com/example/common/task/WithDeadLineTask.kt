@@ -1,15 +1,12 @@
 package com.example.common.task
 
-class WithDeadLineTask : UnDoneTask {
+data class WithDeadLineTask(
+    override val id: Long,
+    override val name: String,
     override val dueDate: Long
-        get() = TODO("Not yet implemented")
-
+) : UnDoneTask {
     override fun doneTask() {
         TODO("Not yet implemented")
     }
 
-    override val id: Long
-        get() = TODO("Not yet implemented")
-    override val name: String
-        get() = TODO("Not yet implemented")
 }
