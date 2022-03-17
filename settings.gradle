@@ -16,3 +16,4 @@ rootProject.name = "hamuTodo"
 include ':app'
 include ':data:api'
 include ':data:repository'
+include ':ui'
