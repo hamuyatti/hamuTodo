@@ -3,7 +3,7 @@ package com.example.db.dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.db.entity.Task
+import com.example.entity.entity.Task
 import kotlinx.coroutines.flow.Flow
 
 interface TaskDao {

@@ -1,9 +1,9 @@
 package com.example.common.task.unDoneTask
 
-import com.example.common.task.Task
+import com.example.common.task.TaskBase
 import com.example.common.task.archive.DoneTask
 
-interface UnDoneTask : Task {
+interface UnDoneTask : TaskBase {
     fun doneTask(unixDoneDate: Long): DoneTask
 
     companion object {

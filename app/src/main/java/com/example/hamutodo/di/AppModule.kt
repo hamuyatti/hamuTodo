@@ -3,6 +3,8 @@ package com.example.hamutodo.di
 import android.content.Context
 import androidx.room.Room
 import com.example.db.TaskDataBase
+import com.example.db.dao.TaskDao
+import com.example.repository.TaskRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,4 +29,10 @@ object AppModule {
     @Provides
     @Singleton
     fun provideTaskDao(db: TaskDataBase) = db.taskDao()
+
+    @Provides
+    @Singleton
+    fun provideTaskRepository(dao: TaskDao) = TaskRepositoryImpl(
+        dao = dao
+    )
 }
