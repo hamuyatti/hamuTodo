@@ -1,4 +1,4 @@
-package com.example.viewmdel
+package com.example.viewmodel
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
