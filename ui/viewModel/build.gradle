@@ -2,7 +2,8 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id "org.jetbrains.kotlin.kapt"
-
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -47,4 +48,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
     kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
 }
