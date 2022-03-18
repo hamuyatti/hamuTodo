@@ -32,7 +32,14 @@ android {
 }
 
 dependencies {
+    implementation project(":ui:view")
+    implementation project(":ui:viewModel")
+    implementation project(":data:api")
+    implementation project(":data:db")
+    implementation project(":data:repository")
     implementation project(":models:common")
+    implementation project(":models:repository")
+
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'
