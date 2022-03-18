@@ -4,7 +4,7 @@ import com.example.common.task.archive.DoneTask
 import com.example.common.task.unDoneTask.UnDoneTask.Companion.POSTPONE_ABLE_COUNT
 
 data class PostponeAbleUnDoneTask(
-    override val id: Long,
+    override val id: Long = 0,
     override val name: String,
     override val unixDueDate: Long,
     val postPoneCount: Int = 0
