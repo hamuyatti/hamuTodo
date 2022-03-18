@@ -17,7 +17,7 @@
             <option value="$PROJECT_DIR$/data/repository" />
             <option value="$PROJECT_DIR$/models" />
             <option value="$PROJECT_DIR$/models/common" />
-            <option value="$PROJECT_DIR$/models/repository" />
+            <option value="$PROJECT_DIR$/models/iRepository" />
             <option value="$PROJECT_DIR$/ui" />
             <option value="$PROJECT_DIR$/ui/view" />
             <option value="$PROJECT_DIR$/ui/viewModel" />

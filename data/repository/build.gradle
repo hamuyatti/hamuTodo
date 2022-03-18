@@ -32,7 +32,7 @@ android {
 dependencies {
     implementation project(":data:db")
     implementation project(":models:common")
-    implementation project(":models:repository")
+    implementation project(':models:iRepository')
 
 
     implementation 'androidx.core:core-ktx:1.7.0'

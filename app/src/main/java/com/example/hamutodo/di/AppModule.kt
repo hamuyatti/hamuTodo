@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Room
 import com.example.db.TaskDataBase
 import com.example.db.dao.TaskDao
+import com.example.repository.TaskRepository
 import com.example.repository.TaskRepositoryImpl
 import dagger.Module
 import dagger.Provides
@@ -32,7 +33,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideTaskRepository(dao: TaskDao) = TaskRepositoryImpl(
+    fun provideTaskRepository(dao: TaskDao): TaskRepository = TaskRepositoryImpl(
         dao = dao
     )
 }
