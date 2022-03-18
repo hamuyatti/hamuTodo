@@ -40,7 +40,6 @@ dependencies {
     implementation project(":data:db")
     implementation project(":data:repository")
     implementation project(":models:common")
-    implementation project(":models:entity")
     implementation project(":models:repository")
 
 

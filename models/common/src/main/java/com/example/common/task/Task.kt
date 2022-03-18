@@ -1,8 +1,7 @@
-package com.example.entity.entity
+package com.example.common.task
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.common.task.TaskBase
 
 
 @Entity

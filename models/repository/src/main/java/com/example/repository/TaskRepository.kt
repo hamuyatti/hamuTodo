@@ -1,6 +1,6 @@
 package com.example.repository
 
-import com.example.entity.entity.Task
+import com.example.common.task.Task
 import kotlinx.coroutines.flow.Flow
 
 interface TaskRepository {
