@@ -1,4 +1,4 @@
-package com.example.tmp
+package com.example.entity
 
 import org.junit.Test
 

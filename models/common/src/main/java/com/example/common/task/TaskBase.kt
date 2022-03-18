@@ -1,6 +1,6 @@
 package com.example.common.task
 
-interface Task {
+interface TaskBase {
     val id: Long
     val name: String
     val unixDueDate : Long
